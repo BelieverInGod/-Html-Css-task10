@@ -1,0 +1,226 @@
+body {
+    background-color: #3d4752;
+}
+.form {
+    display: inline-block;
+    background-color: #46525F;  
+    width: 1700px;
+    height: 800px;
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: 50px
+}
+.form2 {
+    display: inline-block;
+    background-color: #303a43;
+    width: 100px;
+    height: 500px;
+    margin-bottom: 150px;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    
+}
+img {
+    margin: 20px;
+}
+img:first-child {
+    margin-top: 50px;
+}
+img:last-child {
+    padding-bottom: 180px;
+}
+
+header
+{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+p {
+    padding-top: 100px;
+    font-size: 20px;
+}
+
+/* Галочка номер 2 */
+
+.custom {
+  appearance: none;
+}
+
+.checkboxLabel1 {
+  color: white;
+}
+
+.checkboxLabel1::before {
+  content: "";
+  position: absolute;
+  background: grey;
+  border: 1px solid black;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox:checked + .checkboxLabel1::before {
+  content: "\2714";
+  display: block;
+  color: green;
+  text-align: center;
+  
+  
+}
+
+
+
+
+
+select {
+  color: white;
+  background-color: #303a43;
+  border-radius: 20px;
+  height: 50px;
+  width: 200px;
+  padding: 10px;
+}
+
+
+#colorcolum {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10vh;
+  padding-left: 0;
+}
+
+.checkbox {
+  display: none;
+}
+.fake {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid grey;
+  position: relative;
+  border-radius: 50%;
+}
+.fake::before {
+  content: "\1F5F8";
+  color: white;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 1s;
+}
+.checkbox:checked + .fake::before {
+  opacity: 1;
+} 
+
+#blue {
+  background: cornflowerblue;
+}
+#torquoice {
+  background: turquoise;
+}
+#pink {
+  background: hotpink;
+}
+#yellow {
+  background: yellow;
+}
+#orange {
+  background: orange;
+}
+
+#color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+.switch {
+    margin-left: 100px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+      display:none;
+    }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    caret-color: yellowgreen;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
